@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,13 @@
             size: A4;
             margin: 0;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 10pt;
@@ -23,7 +24,7 @@
             color: #333;
             background: #f5f5f5;
         }
-        
+
         .resume {
             width: 210mm;
             min-height: 297mm;
@@ -31,10 +32,10 @@
             margin: 0 auto;
             background: white;
             padding: 12mm 15mm;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
-        
+
         /* Header Section */
         .header {
             text-align: center;
@@ -42,7 +43,7 @@
             padding-bottom: 8px;
             margin-bottom: 10px;
         }
-        
+
         .name {
             font-size: 22pt;
             font-weight: 700;
@@ -50,7 +51,7 @@
             letter-spacing: 1px;
             margin-bottom: 6px;
         }
-        
+
         .contact-info {
             display: flex;
             justify-content: center;
@@ -59,23 +60,23 @@
             font-size: 9pt;
             color: #555;
         }
-        
+
         .contact-info a {
             color: #1a237e;
             text-decoration: none;
         }
-        
+
         .contact-info span {
             display: inline-flex;
             align-items: center;
             gap: 4px;
         }
-        
+
         /* Section Styling */
         .section {
             margin-bottom: 10px;
         }
-        
+
         .section-title {
             font-size: 11pt;
             font-weight: 700;
@@ -86,37 +87,37 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-        
+
         /* Summary */
         .summary {
             text-align: justify;
             font-size: 9.5pt;
             color: #444;
         }
-        
+
         /* Education */
         .edu-item {
             display: flex;
             justify-content: space-between;
             margin-bottom: 4px;
         }
-        
+
         .edu-title {
             font-weight: 600;
             color: #333;
         }
-        
+
         .edu-date {
             font-weight: 600;
             color: #1a237e;
         }
-        
+
         .edu-details {
             font-size: 9pt;
             color: #555;
             margin-left: 10px;
         }
-        
+
         /* Skills */
         .skills-grid {
             display: grid;
@@ -124,67 +125,74 @@
             gap: 3px 10px;
             font-size: 9.5pt;
         }
-        
+
         .skill-category {
             font-weight: 600;
             color: #1a237e;
         }
-        
+
         .skill-items {
             color: #444;
         }
-        
+
         /* Projects */
         .project {
             margin-bottom: 8px;
         }
-        
+
         .project-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .project-title {
             font-weight: 700;
             color: #333;
             font-size: 10pt;
         }
-        
+
         .project-tech {
             font-size: 8.5pt;
             color: #666;
             font-style: italic;
         }
-        
+
         .project-points {
             margin-left: 15px;
             margin-top: 3px;
         }
-        
+
         .project-points li {
             font-size: 9pt;
             color: #444;
             margin-bottom: 2px;
             text-align: justify;
         }
-        
+
+        .team-note {
+            font-size: 8pt;
+            color: #666;
+            font-style: italic;
+            margin-left: 15px;
+        }
+
         /* Certifications */
         .cert-item {
             margin-bottom: 4px;
         }
-        
+
         .cert-title {
             font-weight: 600;
             color: #333;
         }
-        
+
         .cert-details {
             font-size: 8.5pt;
             color: #555;
             margin-left: 10px;
         }
-        
+
         /* Additional Info */
         .additional-grid {
             display: grid;
@@ -192,23 +200,24 @@
             gap: 5px 20px;
             font-size: 9pt;
         }
-        
+
         .add-label {
             font-weight: 600;
             color: #1a237e;
         }
-        
+
         /* Print Styles */
         @media print {
             body {
                 background: white;
             }
+
             .resume {
                 box-shadow: none;
                 margin: 0;
             }
         }
-        
+
         /* Download Button - Only visible on screen */
         .download-btn {
             position: fixed;
@@ -222,13 +231,13 @@
             cursor: pointer;
             font-size: 14px;
             font-weight: 600;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        
+
         .download-btn:hover {
             background: #303f9f;
         }
-        
+
         @media print {
             .download-btn {
                 display: none;
@@ -236,9 +245,10 @@
         }
     </style>
 </head>
+
 <body>
     <button class="download-btn" onclick="window.print()">📄 Download as PDF</button>
-    
+
     <div class="resume">
         <!-- Header -->
         <div class="header">
@@ -252,122 +262,135 @@
                 <span>🏆 <a href="https://leetcode.com/u/gauravkumarmehta100/" target="_blank">LeetCode</a></span>
             </div>
         </div>
-        
+
         <!-- Summary -->
         <div class="section">
             <div class="section-title">Professional Summary</div>
             <p class="summary">
-                Final year Computer Science student skilled in web development, C, Java, Python, SQL, and object-oriented programming. Strong in problem-solving, analytical thinking, and presentations. Experienced in AI/ML solutions using TensorFlow and OpenCV. Eager to apply skills to real-world challenges at IBM and contribute to organizational growth.
+                Final year Computer Science student skilled in programming with C and Python, database management with
+                SQL, and web development fundamentals. Strong problem-solving abilities with hands-on experience in
+                collaborative software projects. Eager to apply analytical skills to real-world challenges at IBM and
+                grow as a software professional.
             </p>
         </div>
-        
+
         <!-- Education -->
         <div class="section">
             <div class="section-title">Education</div>
-            
+
             <div class="edu-item">
                 <span class="edu-title">Bachelor of Technology in Computer Science Engineering</span>
                 <span class="edu-date">2022 - 2026</span>
             </div>
             <div class="edu-details">JIS College of Engineering, Kalyani, Nadia, WB | CGPA: <strong>7.63</strong></div>
-            
+
             <div class="edu-item" style="margin-top: 5px;">
                 <span class="edu-title">12th Grade (CBSE)</span>
                 <span class="edu-date">2020</span>
             </div>
             <div class="edu-details">VJ International School, Bhagalpur, Bihar</div>
-            
+
             <div class="edu-item" style="margin-top: 5px;">
                 <span class="edu-title">10th Grade (CBSE)</span>
                 <span class="edu-date">2018</span>
             </div>
             <div class="edu-details">Sri Rani Saraswati Vidya Mandir, Forbesganj, Bihar</div>
         </div>
-        
+
         <!-- Technical Skills -->
         <div class="section">
             <div class="section-title">Technical Skills</div>
             <div class="skills-grid">
                 <span class="skill-category">Programming:</span>
-                <span class="skill-items">C, Java, Python</span>
-                
+                <span class="skill-items">C, Python</span>
+
                 <span class="skill-category">Web Technologies:</span>
-                <span class="skill-items">HTML, CSS, JavaScript, React.js, Node.js, Express.js</span>
-                
-                <span class="skill-category">AI/ML & Tools:</span>
-                <span class="skill-items">TensorFlow, OpenCV, MediaPipe, Flask</span>
-                
+                <span class="skill-items">HTML, CSS, JavaScript, Node.js, Express.js, React.js</span>
+
                 <span class="skill-category">Databases:</span>
-                <span class="skill-items">SQL, MongoDB, SQLite</span>
-                
-                <span class="skill-category">Tools & Other:</span>
-                <span class="skill-items">Git, GitHub, VS Code, REST APIs, SDLC, Data Structures & Algorithms</span>
+                <span class="skill-items">SQL, SQLite, MongoDB (Basics)</span>
+
+                <span class="skill-category">Tools & Platforms:</span>
+                <span class="skill-items">Git, GitHub, VS Code, REST APIs</span>
+
+                <span class="skill-category">Concepts:</span>
+                <span class="skill-items">Data Structures & Algorithms, SDLC, Problem Solving</span>
             </div>
         </div>
-        
+
         <!-- Projects -->
         <div class="section">
             <div class="section-title">Project Experience</div>
-            
+
             <div class="project">
                 <div class="project-header">
-                    <span class="project-title">🔬 Eye-Guard — AI-Powered Eye Strain Detection</span>
-                    <span class="project-tech">Python, TensorFlow, OpenCV, Flask, MediaPipe, SQLite | 2025</span>
+                    <span class="project-title">🔬 Eye-Guard — AI-Powered Eye Strain Detection (Team Project)</span>
+                    <span class="project-tech">Python, Flask, SQLite | 2025</span>
                 </div>
                 <ul class="project-points">
-                    <li>Built real-time eye strain detection using computer vision with <strong>98% classification accuracy</strong></li>
-                    <li>Implemented Eye Aspect Ratio (EAR) algorithm with MediaPipe's 468-point face mesh for precise landmark detection</li>
-                    <li>Developed Flask REST API with interactive analytics dashboard and automated PDF report generation</li>
+                    <li>Collaborated in a 4-member team to develop an AI-powered eye strain detection system</li>
+                    <li><strong>My Role:</strong> Backend development, database design (SQLite), API integration, and
+                        system testing</li>
+                    <li>Built Flask REST API endpoints for data handling and integrated frontend with backend services
+                    </li>
+                    <li>Implemented user session management and PDF report generation module</li>
                 </ul>
+                <div class="team-note">Team: Gaurav Kumar Mehta (Backend), Ayan Biswas (ML), Arpan Mirsha (Frontend),
+                    Arka Bhattacharya (UI/UX)</div>
             </div>
-            
+
             <div class="project">
                 <div class="project-header">
-                    <span class="project-title">🛵 Bike & Scooter Rental System</span>
-                    <span class="project-tech">React.js, Node.js, Express.js, MongoDB | 2025</span>
+                    <span class="project-title">🛵 Bike & Scooter Rental System (Team Project)</span>
+                    <span class="project-tech">Node.js, Express.js, MongoDB, HTML/CSS | 2025</span>
                 </div>
                 <ul class="project-points">
-                    <li>Built a full-stack platform for bike and scooter rentals with user authentication and booking system</li>
-                    <li>Integrated payment processing, real-time tracking, and efficient ride management features</li>
-                    <li>Designed responsive UI ensuring smooth experience and secure transactions across devices</li>
+                    <li>Developed rental platform with user authentication, booking system, and payment integration</li>
+                    <li><strong>My Role:</strong> Backend API development, database schema design, and server-side logic
+                    </li>
+                    <li>Created RESTful APIs for vehicle listing, booking management, and user profiles</li>
                 </ul>
             </div>
         </div>
-        
+
         <!-- Certifications -->
         <div class="section">
             <div class="section-title">Certifications & Achievements</div>
-            
+
             <div class="cert-item">
                 <span class="cert-title">🏅 Patent Publication — Tumour Detection Using Deep Learning (2025)</span>
-                <div class="cert-details">AI-based system for tumour and mental health detection using CNN; processes MRI, CT & X-ray images</div>
+                <div class="cert-details">Contributed to AI-based system for medical image analysis; team project for
+                    healthcare automation</div>
             </div>
-            
+
             <div class="cert-item">
                 <span class="cert-title">🎯 Technical Lead — MaJIStic Annual Cultural Fest, JIS College (2024-26)</span>
             </div>
-            
+
             <div class="cert-item">
                 <span class="cert-title">📜 Certifications:</span>
-                <span class="cert-details">C Language (NPTEL - 2025) | Full Stack MERN Development (Ardent - Aug 2025)</span>
+                <span class="cert-details">C Language (NPTEL - 2025) | Full Stack MERN Development (Ardent - Aug
+                    2025)</span>
             </div>
         </div>
-        
+
         <!-- Additional Info -->
         <div class="section">
             <div class="section-title">Additional Information</div>
             <div class="additional-grid">
                 <div><span class="add-label">Languages:</span> Hindi (Native), English (Fluent)</div>
-                <div><span class="add-label">Availability:</span> Immediate | Willing to relocate anywhere in India</div>
-                <div><span class="add-label">Interests:</span> Problem-solving on LeetCode, Web shows, Music</div>
+                <div><span class="add-label">Availability:</span> Immediate | Willing to relocate anywhere in India
+                </div>
+                <div><span class="add-label">Interests:</span> Problem-solving on LeetCode, Coding, Learning new tech
+                </div>
                 <div><span class="add-label">Work Mode:</span> Comfortable with Hybrid/Remote/On-site</div>
             </div>
         </div>
     </div>
 
     <script>
-        // Print to PDF instruction
         console.log("To download as PDF: Click the 'Download as PDF' button or press Ctrl+P / Cmd+P and select 'Save as PDF'");
     </script>
 </body>
+
 </html>

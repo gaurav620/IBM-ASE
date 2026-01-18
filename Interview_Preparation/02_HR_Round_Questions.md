@@ -11,51 +11,51 @@ The HR round assesses your personality, communication skills, cultural fit, and 
 ### Q1: Tell me about yourself
 
 **Answer:**
-> I'm Gaurav Kumar Mehta, a final year B.Tech Computer Science student at JIS College of Engineering, Kalyani with a CGPA of 7.63. I have strong skills in web development using Java, C, JavaScript, and Node.js, along with experience in Python and Machine Learning.
+> I'm Gaurav Kumar Mehta, a final year B.Tech Computer Science student at JIS College of Engineering, Kalyani with a CGPA of 7.63. I have strong skills in programming with C and Python, and database management with SQL.
 >
-> I've worked on significant projects including Eye-Guard, an AI-powered eye strain detection system using TensorFlow and OpenCV with 98% accuracy, and a Bike & Scooter Rental System using the MERN stack. I also have a patent publication on Tumour Detection Using Deep Learning.
+> I've worked on collaborative projects including Eye-Guard, an AI-powered eye strain detection system where I handled backend development using Python and Flask. I also contributed to a Bike & Scooter Rental System where I developed RESTful APIs.
 >
-> I'm passionate about solving real-world problems through technology and am eager to contribute to IBM's innovative solutions as an Associate System Engineer.
+> I'm passionate about solving real-world problems through technology and am eager to contribute to IBM's innovative solutions as an Associate System Engineer. I'm a quick learner and excited about the opportunity to grow my skills at IBM.
 
 ### Q2: Why do you want to join IBM?
 
 **Answer:**
 > I want to join IBM for three main reasons:
 >
-> 1. **Innovation**: IBM is at the forefront of technology innovation with hybrid cloud, AI, and quantum computing
-> 2. **Learning**: The opportunity to work on diverse projects and learn from industry experts
-> 3. **Impact**: IBM's solutions impact millions of people worldwide, and I want to be part of that meaningful work
+> 1. **Learning**: IBM offers exposure to enterprise-level technologies and best practices that I'm eager to learn
+> 2. **Innovation**: IBM is at the forefront of technology with hybrid cloud and AI solutions
+> 3. **Growth**: The structured learning environment and mentorship at IBM will help me become a well-rounded professional
 >
-> The Associate System Engineer role aligns perfectly with my technical skills and my goal to grow as a software professional.
+> The Associate System Engineer role is perfect for me to apply my problem-solving skills while learning new technologies like Java from experienced professionals.
 
 ### Q3: Where do you see yourself in 5 years?
 
 **Answer:**
-> In 5 years, I see myself as a senior software engineer or technical lead at IBM, having gained expertise in cloud technologies and AI solutions. I aim to:
+> In 5 years, I see myself as a skilled software engineer at IBM who has:
 >
-> - Lead a team of developers on critical client projects
-> - Contribute to innovative solutions in IBM Consulting
-> - Mentor junior engineers and give back to the community
-> - Continuously upgrade my skills with IBM's learning resources
+> - Mastered enterprise technologies like Java and cloud platforms
+> - Contributed meaningfully to client projects
+> - Grown from an individual contributor to someone who can mentor others
+> - Obtained relevant IBM certifications
+>
+> I'm committed to continuous learning and growing with the organization.
 
 ### Q4: What are your strengths?
 
 **Answer:**
 > My key strengths are:
 >
-> 1. **Problem-Solving**: I enjoy breaking down complex problems into manageable solutions, as demonstrated in my Eye-Guard project where I implemented real-time eye strain detection
-> 2. **Quick Learner**: I adapt rapidly to new technologies - learned MediaPipe and TensorFlow within weeks for my ML projects
-> 3. **Team Collaboration**: As Technical Lead for cultural fest, I coordinated with multiple teams to deliver successful events
-> 4. **Communication**: Fluent in Hindi and English, comfortable presenting technical concepts
+> 1. **Problem-Solving**: I enjoy breaking down complex problems into manageable solutions using my programming skills in C and Python
+> 2. **Quick Learner**: I can pick up new technologies rapidly - I learned Flask and basic API development for my project within a short time
+> 3. **Team Collaboration**: In my Eye-Guard project, I worked effectively with teammates who had different skill sets
+> 4. **Strong Fundamentals**: My foundation in C, Python, and SQL gives me a solid base to learn new technologies
 
 ### Q5: What are your weaknesses?
 
 **Answer:**
-> One area I'm working on is perfectionism. Sometimes I spend extra time polishing code when 'good enough' would suffice. I'm learning to balance quality with delivery timelines by:
+> One area I'm actively working on is expanding my language skills beyond C and Python. While I have strong fundamentals, I recognize that enterprise environments often use Java extensively.
 >
-> - Setting clear milestones and deadlines
-> - Prioritizing features based on impact
-> - Getting early feedback rather than waiting for perfection
+> To address this, I've started learning Java basics and understand OOP concepts well since they're similar across languages. I'm confident that with IBM's training and my learning ability, I can become proficient quickly.
 
 ---
 
@@ -63,18 +63,18 @@ The HR round assesses your personality, communication skills, cultural fit, and 
 
 ### Q6: Tell me about a challenging project you worked on
 
-**Situation:** During my final year, I worked on Eye-Guard, an AI-powered eye strain detection system.
+**Situation:** I worked on Eye-Guard, an AI-powered eye strain detection system, as part of a 4-member team.
 
-**Task:** I needed to build a real-time detection system that could accurately identify eye strain patterns with computer vision.
+**Task:** I was responsible for backend development - building the Flask API, designing the SQLite database, and integrating different modules created by my teammates.
 
 **Action:**
 
-- Researched and implemented the Eye Aspect Ratio (EAR) algorithm
-- Used MediaPipe's 468-point face mesh for accurate facial landmark detection
-- Built a Flask REST API and interactive dashboard
-- Tested extensively to achieve 98% classification accuracy
+- Designed the database schema for storing user sessions and detection results
+- Built RESTful API endpoints using Flask
+- Collaborated closely with the ML team member to integrate the detection model
+- Implemented PDF report generation functionality
 
-**Result:** Successfully deployed a fully functional system that generates PDF reports and provides real-time analytics. This project strengthened my skills in Python, TensorFlow, and OpenCV.
+**Result:** We successfully completed the project with all modules working together. I learned a lot about team collaboration and working with technologies I wasn't initially familiar with.
 
 ### Q7: Describe a time you worked in a team
 
@@ -89,19 +89,19 @@ The HR round assesses your personality, communication skills, cultural fit, and 
 - Resolved conflicts and technical issues promptly
 - Ensured backup plans for critical systems
 
-**Result:** The fest was successfully organized with 1000+ participants. Received appreciation from faculty for seamless technical execution.
+**Result:** The fest was successfully organized with 1000+ participants. This experience taught me the importance of delegation and clear communication.
 
-### Q8: How do you handle pressure and tight deadlines?
+### Q8: How do you handle working with technologies you don't know?
 
 **Answer:**
-> I handle pressure by:
+> In my Eye-Guard project, I had to work with Flask which I wasn't deeply experienced with. My approach was:
 >
-> 1. **Prioritization**: Identifying critical tasks using the Eisenhower matrix
-> 2. **Breaking down**: Dividing large tasks into smaller, manageable chunks
-> 3. **Communication**: Keeping stakeholders informed about progress and challenges
-> 4. **Focus**: Eliminating distractions and maintaining a clear head
+> 1. **Research**: I started with official documentation and tutorials
+> 2. **Small Steps**: Built basic functionality first, then added complexity
+> 3. **Ask for Help**: Collaborated with teammates when stuck
+> 4. **Practice**: Kept experimenting until I understood the concepts
 >
-> During my MERN certification, I had to complete a complex project in 2 weeks while managing college exams. I created a detailed schedule, worked in focused sprints, and successfully delivered on time.
+> I believe this approach will help me learn Java and other technologies at IBM quickly.
 
 ### Q9: Tell me about a time you failed and how you handled it
 
@@ -113,23 +113,22 @@ The HR round assesses your personality, communication skills, cultural fit, and 
 
 - Took responsibility instead of making excuses
 - Immediately analyzed the bug and identified the root cause
-- Fixed the issue and added comprehensive test cases
-- Submitted a detailed post-mortem report
+- Fixed the issue and added test cases
+- Learned the importance of testing
 
-**Result:** The professor appreciated my honesty and problem-solving approach. This taught me the importance of testing and quality assurance, which I now incorporate in all my projects.
+**Result:** The professor appreciated my honesty. Now I always test my code thoroughly before submission.
 
-### Q10: How do you handle conflicts with team members?
+### Q10: How do you handle learning something new?
 
 **Answer:**
-> I approach conflicts with a collaborative mindset:
+> I follow a structured approach:
 >
-> 1. **Listen actively** to understand their perspective
-> 2. **Focus on facts** rather than emotions
-> 3. **Find common ground** and shared objectives
-> 4. **Propose solutions** that benefit the team
-> 5. **Escalate if needed** to a mentor or lead
+> 1. **Understand the basics** through documentation and tutorials
+> 2. **Practice immediately** with small examples
+> 3. **Build something** to apply what I learned
+> 4. **Teach/explain** to others (this helps reinforce my understanding)
 >
-> I believe healthy disagreements lead to better solutions when handled respectfully.
+> For example, when I learned SQL, I practiced with real datasets and built queries for my project databases.
 
 ---
 
@@ -138,42 +137,42 @@ The HR round assesses your personality, communication skills, cultural fit, and 
 ### Q11: What do you know about IBM's hybrid cloud strategy?
 
 **Answer:**
-> IBM's hybrid cloud strategy, powered by Red Hat OpenShift, enables enterprises to run workloads seamlessly across on-premises and cloud environments. Key aspects include:
+> IBM's hybrid cloud strategy, powered by Red Hat OpenShift, enables enterprises to run workloads across on-premises and cloud environments. Key aspects include:
 >
 > - Open standards and flexibility
 > - Integration with existing IT investments
 > - Security and compliance capabilities
-> - AI and automation tools
 >
-> This strategy helps clients modernize without replacing their entire infrastructure, which I find aligned with practical enterprise needs.
+> As an ASE, I'd be excited to learn these technologies and contribute to client solutions.
 
 ### Q12: What IBM values resonate with you?
 
 **Answer:**
-> The IBM value "Innovation that matters – for our company and the world" resonates most with me. I believe technology should solve real problems that impact lives. My Eye-Guard project reflects this - using AI to help prevent eye strain and health issues caused by prolonged screen time.
+> "Dedication to every client's success" resonates most with me. In my project work, I always focus on understanding what the end-user needs before building solutions.
 >
-> "Dedication to every client's success" also aligns with my approach of understanding user needs before building solutions.
+> "Trust and personal responsibility" also aligns with my approach - I take ownership of my work and am honest about what I know and what I need to learn.
 
 ### Q13: Are you willing to relocate and work in hybrid mode?
 
 **Answer:**
-> Yes, absolutely. I'm flexible about relocation to any IBM office across India. I understand the hybrid work model combines the benefits of collaboration in office with the flexibility of remote work. I'm comfortable adapting to any work arrangement that best serves the team and clients.
+> Yes, absolutely. I'm flexible about relocation to any IBM office across India. I understand hybrid work combines office collaboration with remote flexibility. I'm comfortable with any arrangement that serves the team best.
 
 ---
 
 ## Section 4: Situational Questions
 
-### Q14: If you disagree with your manager's decision, what would you do?
+### Q14: If you're asked to use a technology you don't know well, how would you handle it?
 
 **Answer:**
-> I would:
+> This is actually common in my experience. I would:
 >
-> 1. **Seek understanding**: Request a meeting to understand the rationale behind the decision
-> 2. **Present my viewpoint**: Share my concerns with data and reasoning
-> 3. **Respect the decision**: If the manager proceeds with their choice, I'd commit fully to execution
-> 4. **Learn**: Use it as an opportunity to understand different perspectives
+> 1. **Be honest** with my manager about my current skill level
+> 2. **Create a learning plan** with clear milestones
+> 3. **Leverage resources** - IBM's training, documentation, and senior colleagues
+> 4. **Start with simpler tasks** while building skills
+> 5. **Ask questions** rather than guessing
 >
-> Ultimately, I trust that managers have broader context and experience.
+> I believe IBM values honesty and growth mindset over pretending to know everything.
 
 ### Q15: How would you handle an angry client?
 
@@ -184,9 +183,9 @@ The HR round assesses your personality, communication skills, cultural fit, and 
 > 2. **Acknowledge their frustration** and apologize for the inconvenience
 > 3. **Gather facts** to understand the exact issue
 > 4. **Propose solutions** with realistic timelines
-> 5. **Follow up** to ensure resolution and satisfaction
+> 5. **Follow up** to ensure resolution
 >
-> The goal is to turn a negative experience into a demonstration of our commitment to client success.
+> The goal is to turn a negative experience into trust-building.
 
 ---
 
@@ -195,44 +194,54 @@ The HR round assesses your personality, communication skills, cultural fit, and 
 ### Q16: What are your salary expectations?
 
 **Answer:**
-> As a fresher, I'm open to the standard package offered by IBM for Associate System Engineers. I value the learning opportunities, exposure, and growth potential at IBM more than just the initial compensation. I'm confident that my contributions will be fairly recognized over time.
+> As a fresher, I'm open to the standard package offered by IBM for Associate System Engineers. I value the learning opportunities, exposure, and growth potential at IBM more than just the initial compensation.
 
 ### Q17: Do you have any questions for us?
 
 **Recommended Questions to Ask:**
 >
-> 1. What does a typical day look like for an Associate System Engineer at IBM Consulting?
-> 2. What technologies or projects would I likely work on in my first year?
-> 3. How does IBM support the learning and development of new engineers?
-> 4. What are the growth opportunities within IBM Consulting?
-> 5. How is performance evaluated for fresher engineers?
+> 1. What does a typical day look like for an ASE at IBM Consulting?
+> 2. How does IBM support new engineers in learning technologies like Java?
+> 3. What training programs are available for freshers?
+> 4. How are teams structured for project assignments?
+> 5. What technologies would I likely work with in my first year?
 
 ### Q18: Why should we hire you?
 
 **Answer:**
 > You should hire me because:
 >
-> 1. **Technical Skills**: I have hands-on experience with Java, Python, JavaScript, and ML - directly relevant to IBM's projects
-> 2. **Project Experience**: My Eye-Guard project demonstrates my ability to build complete solutions using modern technologies
-> 3. **Learning Agility**: I've consistently picked up new technologies quickly, from MERN stack to TensorFlow
-> 4. **Team Fit**: My values of innovation, collaboration, and client focus align with IBM's culture
-> 5. **Commitment**: I'm eager to grow my career with IBM and contribute to meaningful projects
+> 1. **Strong Fundamentals**: I have solid foundation in C, Python, and SQL
+> 2. **Problem-Solving**: I approach challenges methodically and don't give up easily
+> 3. **Team Player**: My project experience shows I can collaborate effectively
+> 4. **Honest & Eager to Learn**: I'm transparent about my skills and committed to growth
+> 5. **Dedication**: I'll put in the effort to learn Java and other technologies IBM needs
+>
+> I may not know everything today, but I have the foundation and attitude to learn quickly.
+
+---
+
+## How to Handle Skill-Related Questions
+
+### If asked "Do you know Java?"
+>
+> "I'm primarily experienced with C and Python, which share similar programming concepts with Java. I've started learning Java basics and understand OOP concepts well. With IBM's training resources and my ability to learn quickly, I'm confident I can become proficient in Java within a few months."
+
+### If asked about ML/TensorFlow in your project
+>
+> "In the Eye-Guard project, I was responsible for backend development using Python and Flask, and database design with SQLite. My teammate Ayan handled the machine learning components. I collaborated closely with him for API integration and understand the overall system architecture, though I wouldn't claim deep ML expertise."
 
 ---
 
 ## Tips for HR Round
 
-✅ Maintain eye contact and positive body language  
-✅ Be honest and authentic in your answers  
-✅ Use the STAR method for behavioral questions  
+✅ Be honest about your skills - don't claim what you don't know  
+✅ Emphasize your strengths - C, Python, SQL, problem-solving  
+✅ Show eagerness to learn - IBM values growth mindset  
+✅ Use STAR method for behavioral questions  
 ✅ Research IBM thoroughly before the interview  
 ✅ Prepare questions to ask the interviewer  
 ✅ Dress professionally (formal attire)  
-✅ Be punctual and test your tech setup if virtual  
-✅ Send a thank-you email within 24 hours  
-
----
-*Good luck with your IBM interview!* 🍀
 
 ---
 
@@ -240,17 +249,13 @@ The HR round assesses your personality, communication skills, cultural fit, and 
 
 ### Interview Preparation
 
-- [Glassdoor IBM Reviews](https://www.glassdoor.co.in/Interview/IBM-Interview-Questions-E354.htm) - Real interview experiences
-- [AmbitionBox IBM](https://www.ambitionbox.com/reviews/ibm-reviews) - Company insights
-- [Pramp](https://www.pramp.com/) - Free mock interviews
+- [Glassdoor IBM Reviews](https://www.glassdoor.co.in/Interview/IBM-Interview-Questions-E354.htm)
+- [AmbitionBox IBM](https://www.ambitionbox.com/reviews/ibm-reviews)
 
 ### Communication Skills
 
-- [TED Talks](https://www.ted.com/) - Learn presentation skills
-- [Grammarly](https://www.grammarly.com/) - Improve writing
-- [Toastmasters](https://www.toastmasters.org/) - Public speaking
+- [TED Talks](https://www.ted.com/)
+- [Grammarly](https://www.grammarly.com/)
 
-### STAR Method Guide
-
-- [The Muse STAR Method](https://www.themuse.com/advice/star-interview-method) - Detailed guide
-- [Indeed STAR Examples](https://www.indeed.com/career-advice/interviewing/how-to-use-the-star-interview-response-technique)
+---
+*Be honest, be yourself, and show your willingness to learn!* 🍀

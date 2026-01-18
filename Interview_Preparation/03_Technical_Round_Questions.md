@@ -2,175 +2,162 @@
 
 ## About This Round
 
-The technical round evaluates your programming knowledge, problem-solving abilities, and understanding of core CS concepts. IBM looks for Java, C++, Python, Node.js skills and SDLC understanding.
+The technical round evaluates your programming knowledge, problem-solving abilities, and understanding of core CS concepts. This document focuses on **C, Python, and SQL** - your strong areas.
+
+> ⚠️ **Note:** If asked about Java, be honest that you're learning it. Explain that your C and Python experience provides a strong foundation to pick up Java quickly.
 
 ---
 
-## Section 1: Programming Languages
+## Section 1: C Programming (Your Strength!)
 
-### Java Questions
-
-#### Q1: What are the main features of Java?
+### Q1: What are the main features of C?
 
 **Answer:**
 >
-> 1. **Platform Independent**: Write once, run anywhere (WORA)
-> 2. **Object-Oriented**: Based on OOP concepts (Encapsulation, Inheritance, Polymorphism, Abstraction)
-> 3. **Robust**: Strong memory management and exception handling
-> 4. **Secure**: No explicit pointers, bytecode verification
-> 5. **Multithreaded**: Built-in support for concurrent programming
-> 6. **Automatic Memory Management**: Garbage collection
+> 1. **Procedural Language**: Follows step-by-step procedure
+> 2. **Low-level Access**: Can work with memory directly via pointers
+> 3. **Fast & Efficient**: Close to hardware, minimal overhead
+> 4. **Portable**: Can run on different machines with little modification
+> 5. **Rich Library**: Standard library functions
+> 6. **Foundation**: Basis for many other languages (C++, Java)
 
-#### Q2: Explain OOP concepts with examples
-
-**Answer:**
-
-**1. Encapsulation**: Bundling data and methods that operate on that data within a class.
-
-```java
-public class Employee {
-    private String name;  // private data
-    
-    public String getName() {  // public method
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-}
-```
-
-**2. Inheritance**: A class can inherit properties and methods from another class.
-
-```java
-class Animal {
-    void eat() { System.out.println("Eating..."); }
-}
-class Dog extends Animal {
-    void bark() { System.out.println("Barking..."); }
-}
-```
-
-**3. Polymorphism**: Same method behaves differently based on the object.
-
-```java
-class Shape {
-    void draw() { System.out.println("Drawing shape"); }
-}
-class Circle extends Shape {
-    @Override
-    void draw() { System.out.println("Drawing circle"); }
-}
-```
-
-**4. Abstraction**: Hiding implementation details, showing only functionality.
-
-```java
-abstract class Vehicle {
-    abstract void start();  // abstract method
-}
-class Car extends Vehicle {
-    void start() { System.out.println("Car started"); }
-}
-```
-
-#### Q3: What is the difference between ArrayList and LinkedList?
-
-| Feature | ArrayList | LinkedList |
-|---------|-----------|------------|
-| **Structure** | Dynamic array | Doubly linked list |
-| **Access Time** | O(1) | O(n) |
-| **Insert/Delete** | O(n) | O(1) at ends |
-| **Memory** | Less overhead | More (node pointers) |
-| **Use Case** | Frequent access | Frequent insert/delete |
-
-#### Q4: Explain Exception Handling in Java
+### Q2: Explain pointers in C with examples
 
 **Answer:**
-> Exception handling manages runtime errors gracefully using:
->
-> - **try**: Block containing code that may throw exception
-> - **catch**: Handles the exception
-> - **finally**: Always executes (cleanup code)
-> - **throw**: Explicitly throw an exception
-> - **throws**: Declare exceptions a method might throw
+> Pointers are variables that store memory addresses of other variables.
 
-```java
-try {
-    int result = 10 / 0;
-} catch (ArithmeticException e) {
-    System.out.println("Cannot divide by zero: " + e.getMessage());
-} finally {
-    System.out.println("Cleanup code here");
-}
+```c
+int a = 10;
+int *ptr = &a;  // ptr stores address of a
+
+printf("Value of a: %d\n", a);       // 10
+printf("Address of a: %p\n", &a);    // memory address
+printf("Value via ptr: %d\n", *ptr); // 10 (dereferencing)
 ```
 
-#### Q5: What is the difference between == and .equals() in Java?
+**Why pointers matter:**
+
+- Dynamic memory allocation
+- Passing data by reference
+- Working with arrays and strings
+- Data structures (linked lists, trees)
+
+### Q3: What is the difference between malloc() and calloc()?
+
+| Feature | malloc() | calloc() |
+|---------|----------|----------|
+| Syntax | `malloc(size)` | `calloc(n, size)` |
+| Initialization | No (garbage values) | Yes (zeros) |
+| Parameters | 1 (total bytes) | 2 (count, size each) |
+| Speed | Slightly faster | Slightly slower |
+
+```c
+// malloc - allocates 40 bytes (10 integers)
+int *arr1 = (int*) malloc(10 * sizeof(int));
+
+// calloc - allocates 10 integers, initialized to 0
+int *arr2 = (int*) calloc(10, sizeof(int));
+
+// Always free memory!
+free(arr1);
+free(arr2);
+```
+
+### Q4: Explain call by value vs call by reference
+
+**Call by Value:**
+
+```c
+void swap(int a, int b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+// Original values NOT changed
+```
+
+**Call by Reference (using pointers):**
+
+```c
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+// Original values ARE changed
+swap(&x, &y);
+```
+
+### Q5: What are structures in C?
 
 **Answer:**
->
-> - `==` compares **reference** (memory addresses)
-> - `.equals()` compares **content/value**
+> Structures group related data of different types under one name.
 
-```java
-String s1 = new String("Hello");
-String s2 = new String("Hello");
+```c
+struct Student {
+    char name[50];
+    int rollNo;
+    float marks;
+};
 
-System.out.println(s1 == s2);       // false (different objects)
-System.out.println(s1.equals(s2));  // true (same content)
+// Using structure
+struct Student s1;
+strcpy(s1.name, "Gaurav");
+s1.rollNo = 101;
+s1.marks = 85.5;
 ```
 
 ---
 
-### Python Questions
+## Section 2: Python (Your Strength!)
 
-#### Q6: What are Python's key features?
+### Q6: What are Python's key features?
 
 **Answer:**
 >
 > 1. **Interpreted**: Executed line by line
-> 2. **Dynamically Typed**: No variable type declaration needed
-> 3. **High-Level**: Abstracted from machine details
-> 4. **Extensive Libraries**: NumPy, Pandas, TensorFlow, Flask
-> 5. **Readable Syntax**: Clean, Pythonic code
-> 6. **Object-Oriented and Functional**: Supports both paradigms
+> 2. **Dynamically Typed**: No type declaration needed
+> 3. **Easy Syntax**: Readable, Pythonic code
+> 4. **Extensive Libraries**: NumPy, Pandas, Flask
+> 5. **Multi-paradigm**: Supports OOP and functional
+> 6. **Portable**: Runs on Windows, Mac, Linux
 
-#### Q7: Explain List vs Tuple vs Set vs Dictionary
+### Q7: Explain List vs Tuple vs Set vs Dictionary
 
 | Collection | Mutable | Ordered | Duplicates | Syntax |
 |------------|---------|---------|------------|--------|
 | **List** | Yes | Yes | Yes | `[1, 2, 3]` |
 | **Tuple** | No | Yes | Yes | `(1, 2, 3)` |
 | **Set** | Yes | No | No | `{1, 2, 3}` |
-| **Dictionary** | Yes | Yes* | Keys: No | `{"a": 1}` |
-
-*Python 3.7+ maintains insertion order
-
-#### Q8: What are decorators in Python?
-
-**Answer:**
-> Decorators are functions that modify the behavior of other functions without changing their code.
+| **Dictionary** | Yes | Yes | Keys: No | `{"a": 1}` |
 
 ```python
-def my_decorator(func):
-    def wrapper():
-        print("Before function call")
-        func()
-        print("After function call")
-    return wrapper
+# List - mutable, ordered
+my_list = [1, 2, 3]
+my_list.append(4)  # [1, 2, 3, 4]
 
-@my_decorator
-def say_hello():
-    print("Hello!")
+# Tuple - immutable
+my_tuple = (1, 2, 3)
+# my_tuple[0] = 5  # Error!
 
-say_hello()
-# Output:
-# Before function call
-# Hello!
-# After function call
+# Set - unique elements
+my_set = {1, 2, 2, 3}  # {1, 2, 3}
+
+# Dictionary - key-value pairs
+my_dict = {"name": "Gaurav", "age": 22}
 ```
 
-#### Q9: Explain List Comprehension
+### Q8: What is the difference between list and tuple?
+
+| List | Tuple |
+|------|-------|
+| Mutable (can change) | Immutable (cannot change) |
+| Slower | Faster |
+| More memory | Less memory |
+| Use for dynamic data | Use for fixed data |
+| `[]` brackets | `()` parentheses |
+
+### Q9: Explain List Comprehension
 
 **Answer:**
 > List comprehension is a concise way to create lists.
@@ -181,7 +168,7 @@ squares = []
 for i in range(5):
     squares.append(i ** 2)
 
-# List comprehension
+# List comprehension (one line!)
 squares = [i ** 2 for i in range(5)]
 # Output: [0, 1, 4, 9, 16]
 
@@ -190,164 +177,249 @@ even_squares = [i ** 2 for i in range(10) if i % 2 == 0]
 # Output: [0, 4, 16, 36, 64]
 ```
 
+### Q10: What are *args and **kwargs?
+
+**Answer:**
+
+```python
+# *args - variable number of positional arguments
+def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3, 4))  # 10
+
+# **kwargs - variable number of keyword arguments
+def print_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_info(name="Gaurav", age=22)
+# name: Gaurav
+# age: 22
+```
+
+### Q11: Explain exception handling in Python
+
+**Answer:**
+
+```python
+try:
+    result = 10 / 0
+except ZeroDivisionError as e:
+    print(f"Error: {e}")
+except Exception as e:
+    print(f"Other error: {e}")
+else:
+    print("No error occurred")
+finally:
+    print("This always runs")
+```
+
+### Q12: What is the difference between `==` and `is`?
+
+**Answer:**
+
+```python
+a = [1, 2, 3]
+b = [1, 2, 3]
+c = a
+
+print(a == b)   # True (same values)
+print(a is b)   # False (different objects)
+print(a is c)   # True (same object)
+```
+
+- `==` compares **values**
+- `is` compares **identity** (memory location)
+
 ---
 
-### JavaScript/Node.js Questions
+## Section 3: SQL (Your Strength!)
 
-#### Q10: What is the difference between var, let, and const?
+### Q13: What are the types of SQL commands?
 
-| Feature | var | let | const |
-|---------|-----|-----|-------|
-| **Scope** | Function | Block | Block |
-| **Hoisting** | Yes (undefined) | Yes (TDZ) | Yes (TDZ) |
-| **Reassignment** | Yes | Yes | No |
-| **Redeclaration** | Yes | No | No |
+| Type | Commands | Purpose |
+|------|----------|---------|
+| **DDL** (Data Definition) | CREATE, ALTER, DROP | Define structure |
+| **DML** (Data Manipulation) | SELECT, INSERT, UPDATE, DELETE | Manipulate data |
+| **DCL** (Data Control) | GRANT, REVOKE | Access control |
+| **TCL** (Transaction Control) | COMMIT, ROLLBACK | Transaction management |
 
-```javascript
-if (true) {
-    var a = 1;   // accessible outside block
-    let b = 2;   // block-scoped
-    const c = 3; // block-scoped, immutable
-}
-console.log(a); // 1
-console.log(b); // ReferenceError
+### Q14: Explain different types of JOINs
+
+```sql
+-- INNER JOIN - matching rows in both tables
+SELECT * FROM A INNER JOIN B ON A.id = B.id;
+
+-- LEFT JOIN - all from left, matching from right
+SELECT * FROM A LEFT JOIN B ON A.id = B.id;
+
+-- RIGHT JOIN - all from right, matching from left
+SELECT * FROM A RIGHT JOIN B ON A.id = B.id;
+
+-- FULL JOIN - all rows from both tables
+SELECT * FROM A FULL OUTER JOIN B ON A.id = B.id;
 ```
 
-#### Q11: Explain Promises and async/await
+### Q15: Write a query to find the second highest salary
 
-**Answer:**
-> Promises handle asynchronous operations without callback hell.
+```sql
+-- Method 1: Using LIMIT
+SELECT salary FROM employees 
+ORDER BY salary DESC 
+LIMIT 1 OFFSET 1;
 
-```javascript
-// Promise
-function fetchData() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => resolve("Data fetched"), 1000);
-    });
-}
-
-fetchData().then(data => console.log(data));
-
-// async/await (cleaner syntax)
-async function getData() {
-    try {
-        const data = await fetchData();
-        console.log(data);
-    } catch (error) {
-        console.error(error);
-    }
-}
+-- Method 2: Using subquery
+SELECT MAX(salary) FROM employees 
+WHERE salary < (SELECT MAX(salary) FROM employees);
 ```
 
-#### Q12: What is Event Loop in Node.js?
+### Q16: What is the difference between WHERE and HAVING?
+
+| WHERE | HAVING |
+|-------|--------|
+| Filters rows | Filters groups |
+| Before GROUP BY | After GROUP BY |
+| Cannot use aggregate functions | Can use aggregate functions |
+
+```sql
+-- WHERE filters before grouping
+SELECT * FROM employees WHERE salary > 50000;
+
+-- HAVING filters after grouping
+SELECT department, AVG(salary) 
+FROM employees 
+GROUP BY department 
+HAVING AVG(salary) > 50000;
+```
+
+### Q17: Explain GROUP BY with example
+
+```sql
+-- Count employees in each department
+SELECT department, COUNT(*) as emp_count
+FROM employees
+GROUP BY department;
+
+-- Average salary by department
+SELECT department, AVG(salary) as avg_salary
+FROM employees
+GROUP BY department
+ORDER BY avg_salary DESC;
+```
+
+### Q18: What is normalization?
 
 **Answer:**
-> The Event Loop allows Node.js to perform non-blocking I/O operations despite JavaScript being single-threaded. It:
+> Normalization organizes data to reduce redundancy:
 >
-> 1. Executes code in the call stack
-> 2. Offloads async operations to the OS/thread pool
-> 3. Pushes completed callbacks to the callback queue
-> 4. Picks tasks from queue when call stack is empty
+> - **1NF**: Atomic values, no repeating groups
+> - **2NF**: 1NF + no partial dependencies
+> - **3NF**: 2NF + no transitive dependencies
 
 ---
 
-## Section 2: Data Structures & Algorithms
+## Section 4: Data Structures & Algorithms
 
-#### Q13: Explain Time Complexity with Big O Notation
+### Q19: Explain Time Complexity with Big O Notation
 
 | Complexity | Name | Example |
 |------------|------|---------|
-| O(1) | Constant | Array access |
+| O(1) | Constant | Array access by index |
 | O(log n) | Logarithmic | Binary search |
 | O(n) | Linear | Linear search |
 | O(n log n) | Linearithmic | Merge sort |
 | O(n²) | Quadratic | Bubble sort |
-| O(2ⁿ) | Exponential | Recursive Fibonacci |
 
-#### Q14: What is the difference between Stack and Queue?
+### Q20: Write a function to reverse a string in Python
 
-| Feature | Stack | Queue |
-|---------|-------|-------|
-| **Order** | LIFO (Last In First Out) | FIFO (First In First Out) |
-| **Operations** | push/pop | enqueue/dequeue |
-| **Example** | Undo functionality | Task scheduling |
+```python
+# Method 1: Slicing (Pythonic)
+def reverse_string(s):
+    return s[::-1]
 
-#### Q15: Explain Binary Search Tree (BST)
+# Method 2: Two pointers
+def reverse_string(s):
+    s = list(s)
+    left, right = 0, len(s) - 1
+    while left < right:
+        s[left], s[right] = s[right], s[left]
+        left += 1
+        right -= 1
+    return ''.join(s)
+```
 
-**Answer:**
-> A BST is a tree data structure where:
->
-> - Left subtree contains nodes with values less than parent
-> - Right subtree contains nodes with values greater than parent
-> - Both subtrees are also BSTs
+### Q21: Write binary search in C
 
-**Operations:**
-
-- Search: O(log n) average, O(n) worst
-- Insert: O(log n) average
-- Delete: O(log n) average
-
-```java
-class TreeNode {
-    int val;
-    TreeNode left, right;
+```c
+int binarySearch(int arr[], int n, int target) {
+    int left = 0, right = n - 1;
     
-    TreeNode(int val) {
-        this.val = val;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        
+        if (arr[mid] == target)
+            return mid;
+        else if (arr[mid] < target)
+            left = mid + 1;
+        else
+            right = mid - 1;
     }
+    
+    return -1;  // Not found
 }
 ```
 
-#### Q16: Write a function to reverse a linked list
+### Q22: What is the difference between Stack and Queue?
 
-```java
-public ListNode reverseList(ListNode head) {
-    ListNode prev = null;
-    ListNode curr = head;
-    
-    while (curr != null) {
-        ListNode next = curr.next;
-        curr.next = prev;
-        prev = curr;
-        curr = next;
-    }
-    
-    return prev;
-}
+| Stack | Queue |
+|-------|-------|
+| LIFO (Last In First Out) | FIFO (First In First Out) |
+| push/pop | enqueue/dequeue |
+| Example: Undo functionality | Example: Print queue |
+
+```python
+# Stack using list
+stack = []
+stack.append(1)  # push
+stack.pop()      # pop
+
+# Queue using deque
+from collections import deque
+queue = deque()
+queue.append(1)   # enqueue
+queue.popleft()   # dequeue
 ```
 
 ---
 
-## Section 3: SDLC & Software Engineering
+## Section 5: SDLC & Software Engineering
 
-#### Q17: What is Software Development Life Cycle (SDLC)?
+### Q23: What is SDLC?
 
 **Answer:**
-> SDLC is a systematic process for developing software:
+> SDLC (Software Development Life Cycle) is a systematic process:
 >
-> 1. **Requirement Analysis**: Gather and document requirements
-> 2. **Design**: System architecture and design specifications
-> 3. **Implementation**: Coding and development
-> 4. **Testing**: Verification and validation
-> 5. **Deployment**: Release to production
-> 6. **Maintenance**: Ongoing support and updates
+> 1. **Requirement Analysis**: Gather requirements
+> 2. **Design**: System architecture
+> 3. **Implementation**: Coding
+> 4. **Testing**: Verify functionality
+> 5. **Deployment**: Release to users
+> 6. **Maintenance**: Ongoing support
 
-#### Q18: Explain Agile vs Waterfall
+### Q24: Explain Agile vs Waterfall
 
-| Aspect | Agile | Waterfall |
-|--------|-------|-----------|
-| **Approach** | Iterative, incremental | Sequential, linear |
-| **Flexibility** | High, welcomes change | Low, rigid phases |
-| **Delivery** | Continuous (sprints) | End of project |
-| **Testing** | Throughout development | After development |
-| **Best For** | Dynamic requirements | Fixed, clear requirements |
+| Agile | Waterfall |
+|-------|-----------|
+| Iterative, incremental | Sequential, linear |
+| Flexible to changes | Rigid phases |
+| Continuous delivery | Delivery at end |
+| Testing throughout | Testing after dev |
+| Short sprints (2-4 weeks) | Long phases |
 
-#### Q19: What is Git? Explain basic commands
+### Q25: What is Git? Explain basic commands
 
 **Answer:**
-> Git is a distributed version control system.
-
-**Basic Commands:**
 
 ```bash
 git init              # Initialize repository
@@ -361,168 +433,89 @@ git checkout <branch> # Switch branch
 git merge <branch>    # Merge branch
 ```
 
-#### Q20: What is REST API?
+---
+
+## Section 6: Project-Based Questions
+
+### Q26: Explain your Eye-Guard project
 
 **Answer:**
-> REST (Representational State Transfer) is an architectural style for web services.
+> Eye-Guard is an AI-powered eye strain detection system developed as a team project:
+>
+> **Team:**
+>
+> - Gaurav Kumar Mehta (Backend) - That's me
+> - Ayan Biswas (ML/AI)
+> - Arpan Mirsha (Frontend)
+> - Arka Bhattacharya (UI/UX)
+>
+> **My Contributions:**
+>
+> - Designed SQLite database schema for user data and sessions
+> - Built Flask REST API endpoints for data handling
+> - Implemented user session management
+> - Created PDF report generation module
+> - Integrated frontend with ML backend
+>
+> **Technologies I used:** Python, Flask, SQLite, REST APIs
+>
+> **Learning:** This project taught me API design, teamwork, and integrating different modules.
 
-**Principles:**
+### Q27: If asked about TensorFlow/OpenCV
 
-1. **Stateless**: Each request is independent
-2. **Client-Server**: Separation of concerns
-3. **Uniform Interface**: Consistent resource access
-4. **Cacheable**: Responses can be cached
-
-**HTTP Methods:**
-
-| Method | Purpose |
-|--------|---------|
-| GET | Retrieve data |
-| POST | Create new resource |
-| PUT | Update resource |
-| DELETE | Remove resource |
+**How to answer:**
+> "In our Eye-Guard project, my role was backend development. My teammate Ayan handled the machine learning using TensorFlow and OpenCV. I understand the overall system - it uses MediaPipe for face mesh detection and calculates Eye Aspect Ratio to detect strain. While I didn't write the ML code, I integrated the ML model's output with my Flask API to store results and generate reports."
 
 ---
 
-## Section 4: Database Questions
+## How to Handle Questions About Technologies You're Learning
 
-#### Q21: What is the difference between SQL and NoSQL?
-
-| Feature | SQL | NoSQL |
-|---------|-----|-------|
-| **Structure** | Tables, rows | Documents, key-value |
-| **Schema** | Fixed | Flexible |
-| **Scaling** | Vertical | Horizontal |
-| **ACID** | Yes | Eventually consistent |
-| **Examples** | MySQL, PostgreSQL | MongoDB, Cassandra |
-
-#### Q22: What is Normalization?
-
-**Answer:**
-> Normalization organizes data to reduce redundancy:
+### If asked about Java
 >
-> - **1NF**: Eliminate repeating groups, atomic values
-> - **2NF**: 1NF + eliminate partial dependencies
-> - **3NF**: 2NF + eliminate transitive dependencies
-> - **BCNF**: 3NF + every determinant is a candidate key
+> "I'm primarily experienced with C and Python. I've started learning Java and understand OOP concepts since they're similar. I'm confident I can pick up Java quickly with my strong programming foundation."
 
-#### Q23: Explain ACID properties
+### If asked about REST APIs
+>
+> "I have basic experience building REST APIs with Flask in my Eye-Guard project. I understand the concepts of HTTP methods, status codes, and JSON data exchange. I'm eager to learn more about enterprise API development."
 
-**Answer:**
+### If asked about MongoDB
 >
-> - **Atomicity**: All or nothing transactions
-> - **Consistency**: Data remains valid after transaction
-> - **Isolation**: Concurrent transactions don't interfere
-> - **Durability**: Committed data persists even after failure
-
----
-
-## Section 5: Project-Based Questions
-
-#### Q24: Explain your Eye-Guard project technically
-
-**Answer:**
-> Eye-Guard is an AI-powered eye strain detection system:
->
-> **Architecture:**
->
-> - **Input**: Real-time webcam feed
-> - **Processing**: MediaPipe for facial landmark detection (468 points)
-> - **Algorithm**: Eye Aspect Ratio (EAR) calculation
-> - **Model**: TensorFlow for classification (98% accuracy)
-> - **Backend**: Flask REST API
-> - **Frontend**: Interactive dashboard
-> - **Output**: PDF reports with analytics
->
-> **Technical Implementation:**
->
-> ```python
-> def calculate_ear(eye_landmarks):
->     # Compute distances
->     A = distance(p1, p5)  # Vertical
->     B = distance(p2, p4)  # Vertical
->     C = distance(p0, p3)  # Horizontal
->     
->     ear = (A + B) / (2.0 * C)
->     return ear
-> ```
->
-> **Challenges Solved:**
->
-> - Real-time processing optimization
-> - Lighting condition handling
-> - Cross-browser compatibility
-
-#### Q25: How would you improve your project for scale?
-
-**Answer:**
-> To scale Eye-Guard:
->
-> 1. **Microservices**: Split into detection, analytics, and reporting services
-> 2. **Message Queue**: Use RabbitMQ/Redis for async processing
-> 3. **Caching**: Redis for session and result caching
-> 4. **Load Balancing**: Nginx for distributing traffic
-> 5. **Containerization**: Docker + Kubernetes for deployment
-> 6. **CDN**: For static assets and faster delivery
-> 7. **Database**: Switch to PostgreSQL for better concurrency
+> "I have used MongoDB at a basic level in our rental system project. I'm more experienced with SQL databases, but I understand the SQL vs NoSQL tradeoffs and am comfortable learning MongoDB in depth."
 
 ---
 
 ## Quick Tips for Technical Round
 
+✅ Be honest about what you know and don't know  
 ✅ Think out loud - explain your approach  
-✅ Ask clarifying questions  
-✅ Write clean, readable code  
-✅ Consider edge cases  
-✅ Know the time/space complexity  
-✅ Be honest if you don't know something  
-✅ Relate concepts to your projects  
-
----
-*Best of luck!* 🚀
+✅ If stuck, explain how you would approach the problem  
+✅ Relate questions to your project experience  
+✅ It's okay to say "I don't know, but here's how I'd learn it"  
+✅ Show enthusiasm for learning new technologies  
 
 ---
 
 ## Learning Resources 📚
 
-### Java
+### C Programming
 
-- [Oracle Java Tutorials](https://docs.oracle.com/javase/tutorial/) - Official docs
-- [GeeksforGeeks Java](https://www.geeksforgeeks.org/java/) - Complete guide
-- [Javatpoint](https://www.javatpoint.com/java-tutorial) - Beginner-friendly
+- [GeeksforGeeks C](https://www.geeksforgeeks.org/c-programming-language/)
+- [Learn C](https://www.learn-c.org/)
 
 ### Python
 
-- [Real Python](https://realpython.com/) - Practical tutorials
-- [Python Official Docs](https://docs.python.org/3/) - Reference
-- [Automate the Boring Stuff](https://automatetheboringstuff.com/) - Free book
-
-### JavaScript/Node.js
-
-- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Best reference
-- [JavaScript.info](https://javascript.info/) - Modern tutorial
-- [Node.js Docs](https://nodejs.org/en/docs/) - Official
-
-### DSA
-
-- [NeetCode Roadmap](https://neetcode.io/roadmap) - Structured path
-- [Visualgo](https://visualgo.net/) - Algorithm visualization
-- [Abdul Bari YouTube](https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw) - Video tutorials
-
-### SDLC & Git
-
-- [Atlassian SDLC Guide](https://www.atlassian.com/blog/software-teams/sdlc-phases) - Concepts
-- [Git Official](https://git-scm.com/doc) - Documentation
-- [Learn Git Branching](https://learngitbranching.js.org/) - Interactive
+- [Real Python](https://realpython.com/)
+- [Python Official Docs](https://docs.python.org/3/)
 
 ### SQL
 
-- [SQLZoo](https://sqlzoo.net/) - Practice
-- [Mode SQL](https://mode.com/sql-tutorial/) - Interactive
-- [LeetCode SQL](https://leetcode.com/problemset/database/) - Problems
+- [SQLZoo](https://sqlzoo.net/)
+- [Mode SQL Tutorial](https://mode.com/sql-tutorial/)
 
-### Video Courses (YouTube)
+### DSA Practice
 
-- [Java Brains](https://www.youtube.com/user/koaborsa) - Java
-- [Corey Schafer](https://www.youtube.com/user/schaaborsa) - Python
-- [Traversy Media](https://www.youtube.com/user/TechGuyWeb) - Web Dev
+- [LeetCode](https://leetcode.com/)
+- [HackerRank](https://www.hackerrank.com/)
+
+---
+*Focus on your strengths, be honest about learning areas!* 🚀

@@ -11,7 +11,7 @@
 
 ## SUMMARY
 
-Final year Computer Science student skilled in web development, C, Java, SQL, Python, and object-oriented programming. Strong in problem-solving, analytical thinking, and presentations. Experienced in building AI/ML solutions using TensorFlow and OpenCV. Eager to apply my skills to real-world challenges, learn new technologies, and contribute to organisational growth.
+Final year Computer Science student skilled in programming with C and Python, database management with SQL, and web development fundamentals. Strong problem-solving abilities with hands-on experience in collaborative software projects. Eager to apply analytical skills to real-world challenges at IBM and grow as a software professional.
 
 ---
 
@@ -33,45 +33,43 @@ Sri Rani Saraswati Vidya Mandir, Forbesganj, Bihar
 
 | Category | Skills |
 |----------|--------|
-| **Programming Languages** | C, Java, Python |
-| **Web Technologies** | HTML, CSS, JavaScript, Node.js, React.js, Express.js |
-| **Databases** | SQL, MongoDB, SQLite |
-| **AI/ML** | TensorFlow, OpenCV, MediaPipe, Flask |
-| **Tools & Platforms** | Git, GitHub, VS Code |
-| **Other** | Data Structures & Algorithms, REST APIs, SDLC |
+| **Programming Languages** | C, Python |
+| **Web Technologies** | HTML, CSS, JavaScript, Node.js, Express.js, React.js |
+| **Databases** | SQL, SQLite, MongoDB (Basics) |
+| **Tools & Platforms** | Git, GitHub, VS Code, REST APIs |
+| **Concepts** | Data Structures & Algorithms, SDLC, Problem Solving |
 
 ---
 
 ## PROJECT EXPERIENCE
 
-### 🔬 Eye-Guard - AI-Powered Eye Strain Detection | [GitHub](https://github.com/gaurav620/Eye-Guard)
+### 🔬 Eye-Guard — AI-Powered Eye Strain Detection (Team Project)
 
-**Python, TensorFlow, OpenCV, Flask, MediaPipe, SQLite** | 2025
+**Python, Flask, SQLite** | 2025
 
-• Built real-time eye strain detection using computer vision with **98% classification accuracy**  
-• Implemented Eye Aspect Ratio (EAR) algorithm with MediaPipe's 468-point face mesh for precise facial landmark detection  
-• Developed Flask REST API with interactive analytics dashboard and PDF report generation  
-• Designed responsive frontend with real-time monitoring and historical data visualization  
+**Team:** Gaurav Kumar Mehta (Backend), Ayan Biswas (ML), Arpan Mirsha (Frontend), Arka Bhattacharya (UI/UX)
+
+• Collaborated in a 4-member team to develop an AI-powered eye strain detection system  
+• **My Role:** Backend development, database design (SQLite), API integration, and system testing  
+• Built Flask REST API endpoints for data handling and integrated frontend with backend services  
+• Implemented user session management and PDF report generation module  
 
 ---
 
-### 🛵 Bike & Scooter Rental System | 2025
+### 🛵 Bike & Scooter Rental System (Team Project)
 
-**React.js, Node.js, Express.js, MongoDB**
+**Node.js, Express.js, MongoDB, HTML/CSS** | 2025
 
-• Built a platform for bike and scooter rentals with user authentication and booking system  
-• Integrated payment processing, real-time tracking, and efficient ride management features  
-• Designed a responsive user interface ensuring smooth experience and secure transactions  
-• Implemented RESTful APIs for seamless frontend-backend communication  
+• Developed rental platform with user authentication, booking system, and payment integration  
+• **My Role:** Backend API development, database schema design, and server-side logic  
+• Created RESTful APIs for vehicle listing, booking management, and user profiles  
 
 ---
 
 ## CERTIFICATIONS & ACHIEVEMENTS
 
 🏅 **Patent Publication – Tumour Detection Using Deep Learning (2025)**
-• AI-based system for tumour and mental health detection using CNN
-• Processes MRI, CT, and X-ray images for accurate automated diagnosis
-• Improves diagnosis and treatment planning
+• Contributed to AI-based system for medical image analysis; team project for healthcare automation
 
 🎯 **Technical Lead:** MaJIStic Annual Cultural Fest, JIS College of Engineering - 2024-26
 
@@ -84,9 +82,9 @@ Sri Rani Saraswati Vidya Mandir, Forbesganj, Bihar
 ## ADDITIONAL INFORMATION
 
 **Languages:** Hindi (Native), English (Fluent)  
-**Hobbies:** Watching Web shows, Listening to music, Problem-solving on LeetCode  
 **Availability:** Immediate | Willing to relocate anywhere in India  
-**Work Arrangement:** Comfortable with Hybrid/Remote/On-site  
+**Interests:** Problem-solving on LeetCode, Coding challenges, Learning new technologies  
+**Work Mode:** Comfortable with Hybrid/Remote/On-site  
 
 ---
 
