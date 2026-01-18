@@ -480,3 +480,49 @@ git merge <branch>    # Merge branch
 
 ---
 *Best of luck!* 🚀
+
+---
+
+## Learning Resources 📚
+
+### Java
+
+- [Oracle Java Tutorials](https://docs.oracle.com/javase/tutorial/) - Official docs
+- [GeeksforGeeks Java](https://www.geeksforgeeks.org/java/) - Complete guide
+- [Javatpoint](https://www.javatpoint.com/java-tutorial) - Beginner-friendly
+
+### Python
+
+- [Real Python](https://realpython.com/) - Practical tutorials
+- [Python Official Docs](https://docs.python.org/3/) - Reference
+- [Automate the Boring Stuff](https://automatetheboringstuff.com/) - Free book
+
+### JavaScript/Node.js
+
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Best reference
+- [JavaScript.info](https://javascript.info/) - Modern tutorial
+- [Node.js Docs](https://nodejs.org/en/docs/) - Official
+
+### DSA
+
+- [NeetCode Roadmap](https://neetcode.io/roadmap) - Structured path
+- [Visualgo](https://visualgo.net/) - Algorithm visualization
+- [Abdul Bari YouTube](https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw) - Video tutorials
+
+### SDLC & Git
+
+- [Atlassian SDLC Guide](https://www.atlassian.com/blog/software-teams/sdlc-phases) - Concepts
+- [Git Official](https://git-scm.com/doc) - Documentation
+- [Learn Git Branching](https://learngitbranching.js.org/) - Interactive
+
+### SQL
+
+- [SQLZoo](https://sqlzoo.net/) - Practice
+- [Mode SQL](https://mode.com/sql-tutorial/) - Interactive
+- [LeetCode SQL](https://leetcode.com/problemset/database/) - Problems
+
+### Video Courses (YouTube)
+
+- [Java Brains](https://www.youtube.com/user/koaborsa) - Java
+- [Corey Schafer](https://www.youtube.com/user/schaaborsa) - Python
+- [Traversy Media](https://www.youtube.com/user/TechGuyWeb) - Web Dev

@@ -233,3 +233,24 @@ The HR round assesses your personality, communication skills, cultural fit, and 
 
 ---
 *Good luck with your IBM interview!* 🍀
+
+---
+
+## Learning Resources 📚
+
+### Interview Preparation
+
+- [Glassdoor IBM Reviews](https://www.glassdoor.co.in/Interview/IBM-Interview-Questions-E354.htm) - Real interview experiences
+- [AmbitionBox IBM](https://www.ambitionbox.com/reviews/ibm-reviews) - Company insights
+- [Pramp](https://www.pramp.com/) - Free mock interviews
+
+### Communication Skills
+
+- [TED Talks](https://www.ted.com/) - Learn presentation skills
+- [Grammarly](https://www.grammarly.com/) - Improve writing
+- [Toastmasters](https://www.toastmasters.org/) - Public speaking
+
+### STAR Method Guide
+
+- [The Muse STAR Method](https://www.themuse.com/advice/star-interview-method) - Detailed guide
+- [Indeed STAR Examples](https://www.indeed.com/career-advice/interviewing/how-to-use-the-star-interview-response-technique)

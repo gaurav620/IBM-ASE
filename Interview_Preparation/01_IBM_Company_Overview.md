@@ -72,3 +72,28 @@ IBM Consulting is IBM's consulting and global professional services business wit
 
 **Q: How does IBM contribute to society?**
 > IBM contributes through initiatives like IBM SkillsBuild for education, sustainability commitments to achieve net-zero emissions, AI ethics research, and technology for good programs. IBM has also been at the forefront of addressing global challenges through technology.
+
+---
+
+## Learning Resources 📚
+
+### IBM Official Resources
+
+- [IBM Careers](https://www.ibm.com/careers) - Official job portal
+- [IBM Blog](https://www.ibm.com/blog) - Company updates and insights
+- [IBM Research](https://research.ibm.com/) - Innovation and breakthroughs
+- [IBM Developer](https://developer.ibm.com/) - Technical tutorials
+
+### IBM Technologies to Learn
+
+- [IBM Cloud Docs](https://cloud.ibm.com/docs) - Cloud platform
+- [IBM Watson](https://www.ibm.com/watson) - AI solutions
+- [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) - Hybrid cloud
+
+### Free Learning
+
+- [IBM SkillsBuild](https://skillsbuild.org/) - Free courses and certifications
+- [IBM Coursera Courses](https://www.coursera.org/ibm) - Professional certificates
+
+---
+*Stay updated with IBM's latest innovations!*
